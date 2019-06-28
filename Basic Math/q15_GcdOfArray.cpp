@@ -15,10 +15,15 @@ int main()
 		}
 		sort(arr,arr + n);
 		int j = 0;
+		
+
+		int dividingNum = arr[j];
+		// dividing number is the number i use to divide the entire array by
 		while(arr[j] == 1){
 			j++;
 		}
-		int dividingNum = arr[j];
+		
+
 		bool isDivisable = true;
 		for(int i = j; i < n; i++){
 			if(arr[i]%dividingNum == 0){ //the number is divisible
