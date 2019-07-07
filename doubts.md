@@ -9,3 +9,9 @@
 
 - Find the closest pair from two arrays
 - https://practice.geeksforgeeks.org/problems/find-the-closest-pair-from-two-arrays/0/?ref=self //BRAINSTORM MORE ON IT
+
+- Find the smallest number missing in O(1)
+- https://practice.geeksforgeeks.org/problems/smallest-positive-missing-number/0
+--> solution https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/
+
+- Selectively delete chrome history of particluar websites --> look at the pyhton repo code and try to emulate this for CV

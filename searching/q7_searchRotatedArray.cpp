@@ -35,7 +35,7 @@ int main()
 		cin >> k;
 		int rotateIndex;
 		//as the array is rotated it will be sorted in two parts
-		for (int i = 0; i < n; ++i)
+		for (int i = 0; i < n-1; ++i)
 		{
 			if(arr[i+1] < arr[i]){
 				rotateIndex = i;
@@ -45,14 +45,16 @@ int main()
 			// i+1 to n-1 is another sorted array
 			}
 		}
-		if(binarySearch(0,rotateIndex,k,arr) == -1 && binarySearch(rotateIndex+1,n-1,k,arr) == -1){
+		int p = binarySearch(0,rotateIndex,k,arr);
+		int q = binarySearch(rotateIndex+1,n-1,k,arr);
+		if(p == -1 && q == -1){
 			cout << "-1\n";
 		}
-		else if(binarySearch(0,rotateIndex,k,arr) == -1){
-			cout << binarySearch(rotateIndex+1,n-1,k,arr) << endl;
+		else if(p == -1){
+			cout << q << endl;
 		}
 		else{
-			cout << binarySearch(0,rotateIndex,k,arr) <<endl;
+			cout << p <<endl;
 		}
 	}
 }

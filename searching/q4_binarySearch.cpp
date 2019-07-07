@@ -29,10 +29,10 @@ int bin_search(int A[], int left, int right, int k)
             return mid; //that is the index
         }
         if(A[mid] > k){
-        return bin_search(A,left, mid-1, k);
+            return bin_search(A,left, mid-1, k);
         }
         else{
-        return bin_search(A, mid+1, right, k);
+            return bin_search(A, mid+1, right, k);
         }
     }
     else
