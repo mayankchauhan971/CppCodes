@@ -15,3 +15,11 @@
 --> solution https://www.geeksforgeeks.org/find-the-smallest-positive-number-missing-from-an-unsorted-array/
 
 - Selectively delete chrome history of particluar websites --> look at the pyhton repo code and try to emulate this for CV
+
+- Tower of hanoi problem
+
+- Understand how node** something works
+https://practice.geeksforgeeks.org/problems/insert-in-a-sorted-list/1
+
+- Solve more matrix prblems
+https://practice.geeksforgeeks.org/problems/the-celebrity-problem/1

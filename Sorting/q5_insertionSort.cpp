@@ -1,35 +1,30 @@
 #include <iostream>
 using namespace std;
-//we first iterate and find the smallest element
-//then we go and swap the first element with the smallest element
-//as swapping is involved so we will use indicies
-
 
 int main(){
-	int t;
-	cin >> t;
-	while(t--){
-		int n;
-		cin >> n;
-		int arr[n];
-		for (int i = 0; i < n; ++i){
-			cin >> arr[i];
-		}
-
-		for (int i = 0; i < n-1; ++i){
-			int smallestInd = i;
-			for (int j = i+1; j < n; ++j){
-				if(arr[j] < arr[smallestInd]){
-					smallestInd = j;
-				}
-			}
-			int temp = arr[smallestInd];
-			arr[smallestInd] = arr[i];
-			arr[i] = temp;
-		}
-		for (int i = 0; i < n; ++i){
-			cout << arr[i] << " ";
-		}
-		cout << endl;
-	}
+  int t;
+  cin >> t;
+  while(t--){
+    int n;
+    cin >> n;
+    int arr[n];
+    for (int i = 0; i < n; ++i){
+      cin >> arr[i];
+    }
+    //insertion sort
+    // if(arr[1] < arr[0])--> insert 1 before 0
+    for (int i = 1; i < n; i++){
+      int var = arr[i];
+      int j = i -1;
+      while(j >= 0 && arr[j] > var){
+        arr[j+1] = arr[j];
+        j= j - 1;
+      }
+      arr[j+1] = var;
+    }
+    for (int i = 0; i < n; ++i)
+    {
+      cout << arr[i] << " "; 
+    }
+  }
 }
