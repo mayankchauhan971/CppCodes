@@ -1,6 +1,7 @@
 //TO DO ---> INCOMPLETE
 
 #include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
 
 int merge(int leftArr[], int rightArr[], int arr[]){
